@@ -2,14 +2,7 @@
 {
     public static void Main(string[] args)
     {
-        Console.WriteLine("LuCkY dRaW\n Enter number: ");
-
-        // string input = Console.ReadLine();
-        // int.TryParse (input, out int num);
-        // LuckyDraw ld = new LuckyDraw();
-        // Console.WriteLine($" {num} isLucky?  :  {ld.IsLuckyNumber(num)}\n" );
-
-        
+        Console.WriteLine("\nLuCkY dRaW\n ");
         
         Console.Write("Enter start: ");
         int start = int.Parse(Console.ReadLine());

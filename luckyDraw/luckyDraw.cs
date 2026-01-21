@@ -14,21 +14,26 @@ public class LuckyDraw
         return sum;
     }
 
+    public bool IsPrime(int num)
+    {
+        if (num <= 1) return false;
+        if (num == 2) return true;
+        if (num % 2 == 0) return false;
+
+        for (int i = 3; i * i <= num; i += 2)
+        {
+            if (num % i == 0) return false; 
+        }
+        return true;
+    }
+
     public bool IsLuckyNumber(int num)
     {
+        if (IsPrime(num)) return false;
         
         int sumOfDigits = GetSumOfDigits(num);
         int squareOfSumOfDigits = sumOfDigits * sumOfDigits;
         int sumOfDigitsOfSquare = GetSumOfDigits(num * num);
-
-
-
-        // string numAsString = string.parse(num);
-
-        // int length = numAsString.Length;
-        // int first = numAsString[0];
-        // int last = numAsString[length - 1];
-
         
         return (squareOfSumOfDigits == sumOfDigitsOfSquare);
 
