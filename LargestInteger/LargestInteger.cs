@@ -1,7 +1,7 @@
 public class LargestInteger
 {
     public int GetLargestInteger(int first, int second, int third)
-    {
+    {   
         int largest;
 
         if (first >= second && first >= third)

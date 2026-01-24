@@ -11,6 +11,6 @@
 
         LargestInteger li = new LargestInteger();
         int largest = li.GetLargestInteger(first,second,third);
-        Console.WriteLine("Largest Integer: " + largest);
+        Console.WriteLine($"Largest Integer[{first},{second},{third}]: " + largest);
     }
 }
